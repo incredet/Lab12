@@ -8,7 +8,6 @@ public abstract class Task<T> {
     private String id;
     private Map<String, String> headers;
     public abstract void apply(T arg);
-
     public void freeze() {
         id = UUID.randomUUID().toString();
     }
